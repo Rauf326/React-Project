@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar-nav a {
+  font-size: 20px;
+  color: rgb(63, 43, 179);
+  /* font-weight: bold; */
+}
+
+.navbar-nav li {
+  margin: 0 10px;
+}
+
+.fa-brands {
+  font-size: 25px !important;
+  margin: 0 8px;
+}
+
+.fa-facebook {
+  color: blue;
+}
+
+.fa-instagram {
+  color: rgb(238, 177, 11);
+}
+
+.fa-github {
+  color: rgb(43, 43, 44);
+}
+
+.navbar-brand img {
+  margin: 0 0 0 15px;
+}
+
+/* h1{
+  font-size: 3.2rem;
+  font-weight: bold;
+    color: rgb(63, 43, 179);
+} */
+.homesection h1 {
+  /* margin: 16px; */
+  font-size: 3.2rem;
+  color: rgb(63, 43, 179);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 2s ease linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.homesection h1::before {
+  content: attr(data-name);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  color: rgb(53, 53, 53);
+  overflow: hidden;
+  transition: width 1s linear;
+}
+
+.homesection h1:hover::before {
+  width: 100%;
+}
+
+.homesection h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+}
+
+.homesection p {
+  font-size: 1rem;
+  color: rgb(68, 68, 68);
+
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  color: white;
+  background-color: rgb(63, 43, 179);
+  border-color: rgb(63, 43, 179);
+}
+
+.btn:focus-visible {
+  color: var(--bs-btn-hover-color);
+  background-color: rgb(63, 43, 179);
+  border-color: rgb(63, 43, 179);
+  outline: 0;
+  box-shadow: none;
+}
+
+.homesection .btn-primary {
+  background-color: rgb(63, 43, 179);
+  color: white;
+  font-size: 18px;
+  border-color: rgb(63, 43, 179);
+
+}
+
+.homesection .btn-primary:hover {
+  background-color: rgb(75, 56, 184);
+  color: white;
+}
+
+.homesection .btn-outline-primary {
+  border-color: rgb(63, 43, 179);
+  color: rgb(63, 43, 179);
+  font-size: 18px;
+}
+
+.homesection .btn-outline-primary:hover {
+  background-color: rgb(63, 43, 179);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+/* //// hero section complete ////  */
+
+.tech-hr {
+  border-top: 2px solid rgb(63, 43, 179);
+
+}
+
+.tech-h1 {
+  color: rgb(63, 43, 179);
+  font-size: 3rem;
+}
+
+.skillsection h2 {
+  font-size: 2.8rem;
+}
+
+.skillsection span {
+  color: rgb(63, 43, 179);
+  font-weight: bold;
+}
+
+.skillsection p {
+  font-size: 1.2rem;
+}
+
+.skills {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #07374a;
+}
+
+.skills-bar .bar .progress-line {
+
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: rgb(63, 43, 179);
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  /* text-transfrom : uppercase; */
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 95%;
+}
+
+.progress-line .css {
+  width: 85%;
+}
+
+.progress-line .bootstrap {
+  width: 85%;
+}
+
+.progress-line .javascript {
+  width: 62%;
+}
+
+.progress-line .react {
+  width: 40%;
+}
+
+.progress-line .mern {
+  width: 30%;
+}
+
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #07374a;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line .html::after {
+  content: "95%";
+}
+
+.progress-line .css::after {
+  content: "85%";
+}
+
+.progress-line .bootstrap::after {
+  content: "85%";
+}
+
+.progress-line .javascript::after {
+  content: "62%";
+}
+
+.progress-line .react::after {
+  content: "40%";
+}
+
+.progress-line .mern::after {
+  content: "30%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+  .skills {
+    width: 80%;
+  }
+
+  .skills-bar .bar .progress-line {
+    width: 100%;
+  }
+}
+
+.box-menu {
+  font-size: 19px;
+  padding: 13px;
+  max-width: 100%;
+  min-width: 10%;
+  color: rgb(63, 43, 179);
+  border-color: rgb(63, 43, 179);
+  box-shadow: none;
+
+}
+
+.box-menu:hover {
+  background-color: rgb(63, 43, 179);
+  border-color: rgb(63, 43, 179);
+}
+
+.box figcaption {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.box {
+  transition: 0.4s ease;
+}
+
+.box:hover {
+  box-shadow: 4px 24px 36px -15px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 4px 24px 36px -15px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 4px 24px 36px -15px rgba(0, 0, 0, 0.71);
+}
+
+.box {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* // contact us/// */
+.serviceBox {
+  background-color: rgb(63, 51, 128);
+  height: 29rem;
+  color: white;
+  transition: 0.5s ease !important;
+}
+
+.IconBox .h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+.serviceBox:hover {
+  background-color: rgb(93, 84, 145);
+  color: white;
+}
+
+.serviceBox:hover .serviceBoxButton {
+  display: block !important;
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.serviceBox:hover .serviceboxhide {
+  display: none;
+}
+
+.serviceBoxButton:hover {
+  background-color: white !important;
+  color: rgb(26, 26, 26) !important;
+}
+
+.fa-arrow-right {
+  margin-top: 33px;
+  font-size: 1.3rem;
+}
+
+.serviceBoxButton {
+  font-size: 19px;
+}
+
+
+.teamSec {
+  background: url(/src/images/teams.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.teambox {
+  background: #fafafa;
+  width: 500px;
+  margin: auto;
+  height: 500px;
+  border-radius: 50%;
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.teambox button {
+  border-radius: 50px !important;
+  font-size: 1.6rem;
+  background-color: #3098f3 !important;
+  border-color: #3098f3 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+}
+
+.teambox button:hover {
+  color: #000000 !important;
+  background-color: white !important;
+  border-color: white !important;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.teambox p {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.teambox h1 {
+  font-size: 3.5rem;
+}
+
+.jumbotron {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #3098f3;
+}
+
+.jumbotron p {
+  color: white;
+  font-size: 3.4rem;
+  line-height: 1.1;
+}
+
+.jumbotron p span {
+  color: rgb(251, 255, 18);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.square-holder {
+  padding: 30px;
+  border: 1px solid #cecece;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  min-height: 200px
+}
+
+.square-holder img {
+  max-width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.square-holder:hover img {
+  filter: none;
+}
+
+.partners {
+  background-color: white;
+}
+
+/* ///// service //// */
+
+.servicesBox {
+  padding: 50px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px 0px rgb(0 0 0 / 10%);
+  box-shadow: 0 1px 2px 0px rgb(0 0 0 / 10%);
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+.serviceBox h2 {
+  margin-bottom: 10px;
+  color: #353535;
+}
+
+.servicesBox:hover {
+  box-shadow: 10px 11px 33px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 11px 33px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 33px -6px rgba(0, 0, 0, 0.75);
+}
+
+.service-jumbo p {
+  font-size: 20px;
+  line-height: 1.3;
+  color: #5f5f5f;
+}
+
+.service-jumbo li {
+  font-size: 20px !important;
+}
+
+.service-jumbo {
+  background: rgb(241, 240, 240) !important;
+}
+
+.service-jumbo h1 {
+  color: rgb(63, 43, 179);
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.service-jumbo li {
+  font-size: 20px;
+  line-height: 1.3;
+  color: #5f5f5f;
+  margin-bottom: 10px;
+}
+
+.service-jumbo i {
+  color: rgb(13, 201, 29);
+}
+
+.service-jumbo button {
+  background-color: rgb(63, 43, 179) !important;
+}
+
+.service-jumbo button:hover {
+  color: #000000 !important;
+  background-color: white !important;
+  border-color: white !important;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+button {
+  border-radius: 50px !important;
+}

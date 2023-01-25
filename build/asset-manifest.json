@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.633cd6fa.css",
+    "main.js": "/static/js/main.fce2c332.js",
+    "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
+    "static/media/hero.jpg": "/static/media/hero.62ca3fdf4309530ef343.jpg",
+    "static/media/teams.jpg": "/static/media/teams.a0cfa191ef8d79a093f4.jpg",
+    "static/media/logo.png": "/static/media/logo.89a58045f1fb35306807.png",
+    "static/media/footerLogo.png": "/static/media/footerLogo.fb39d001640b47448e17.png",
+    "static/media/aboutHero.png": "/static/media/aboutHero.4c64ccfa1ea30242f63f.png",
+    "static/media/service.svg": "/static/media/service.491e870644af88b8357257a1dd719f0f.svg",
+    "static/media/serviceJumbo.svg": "/static/media/serviceJumbo.698f07cc2fa96573f8bdc612ce0b14cc.svg",
+    "index.html": "/index.html",
+    "main.633cd6fa.css.map": "/static/css/main.633cd6fa.css.map",
+    "main.fce2c332.js.map": "/static/js/main.fce2c332.js.map",
+    "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.633cd6fa.css",
+    "static/js/main.fce2c332.js"
+  ]
+}
